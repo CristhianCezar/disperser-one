@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/patterns.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/menu-burguer.css">
+
+    <link rel="shortcut icon" href="img/Logo-dispenser-one-removebg-preview.png" type="image/x-icon">
+
+    <script src="js/loader.js"></script>
+    <title>Dispenser One</title>
+</head>
+<body  onload="awaitLoader()">
+    <div id="img-loader">
+        <img src="img/Logo-dispenser-one-transparent.png" alt="Logomarca em letras, escrito Dispenser">
+    </div>
+
+    <div class="container" id="container">
+        <header class="header">
+            <div class="img-main">
+                <img src="img/img-1-dispenser-one.png" alt="">
+            </div>
+            <div class="menu-hamburguer">
+                <input type="checkbox" id="checkbox-menu" onclick="isChecked()">
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <nav id="container-nav">
+                <ul>
+                    <a href="#">
+                        <li>Categorias</li>
+                    </a>
+                    <a href="#">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#">
+                        <li>Ajuda</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="main">
+            <div class="container-main">
+                <div class="title">
+                    <h1>Oferta Especial</h1>
+                    <h2>O Melhor preço aqui</h2>
+                </div>
+                <div class="product">
+                    <a href="#" id="link-product">
+                        <div class="img">
+                            <img src="img/dispenser_12-removebg-preview.png" alt="" id="img-product">
+                        </div>
+                        <div class="description">
+                            <div class="title">
+                                <h3 id="title-product">Dispenser e porta escova</h3>
+                            </div>
+                            <div class="value">
+                                <h4 id="value-product">R$ 30,00</h4>
+                                <h4 id="value-product-card">10x de 3,00</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/menuBurger.js"></script>
+</body>
+</html>

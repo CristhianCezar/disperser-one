@@ -1,0 +1,24 @@
+#img-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+#img-loader img {
+    width: 400px;
+    animation: Pulsation 1.4s infinite linear;
+
+}
+
+@keyframes Pulsation {
+    from {
+        transform: scale(1.04);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
