@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shoppingBang.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/patterns.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-shopping-bag">
+        <section class="title">
+            <div class="container-title">
+                <h2>Sacola de Compras</h2>
+            </div>
+        </section>
+        <section class="amount">
+            <div class="container-amount">
+                <div class="img">
+                    <img alt="" class="img-product">
+                </div>
+                <div class="description">
+                    <div class="description-value">
+                        <h3 class="title-dispenser"></h3>
+                    </div>
+                    <div class="value">
+                        <h4 class="price"></h4>
+                        <h4 class="price-card"></h4>
+                    </div>
+                </div>
+                <div class="set-amount">
+                    <div class="title">Quantidade</div>
+                    <div class="btn-amount">
+                        <button type="button" class="less" id="less">-</button>
+                        <div id="amount-show"></div>
+                        <button type="button" class="more" id="more">+</button>      
+                    </div>          
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping">
+            <div class="calculator">
+                <label for="shipping-calculator">Calcular Frete</label>
+                <input type="text" id="shipping-calculator" placeholder="00000-000">
+            </div>
+        </section>
+        <section class="resume">
+            <div class="title">
+                <h3>Resumo</h3>
+            </div>
+            <div class="resume-details">
+                <div class="information-values">
+                    <label for="resume-product"> Valor dos produtos</label>
+                    <input type="text" id="resume-product" disabled placeholder="30,00">
+                </div>
+
+                <div class="information-values">
+                    <label for="value-shipping">Valor de frete</label>
+                    <input type="text" id="value-shipping" placeholder="30,00" disabled>
+                </div>
+
+                <div class="information-values">    
+                    <label for="value-discount">Desconto</label>
+                    <input type="text" id="value-discount" placeholder="00.00%" disabled>
+                </div>
+            </div>
+            <div class="information-values">
+                <label for="total" class="total">Total</label>
+                <input type="text" id="total" placeholder="30,00" disabled>
+            </div>
+        </section>
+        <section class="payment">
+            <div class="container-btn">
+                <a href="#">Ir para pagamento</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/item-amount.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
