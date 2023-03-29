@@ -45,6 +45,28 @@
             <div class="calculator">
                 <label for="shipping-calculator">Calcular Frete</label>
                 <input type="text" id="shipping-calculator" placeholder="00000-000">
+                <button type="button" id="btn-calculator-shipping">Enviar</button>
+            </div>
+            <div id="result-cep">
+                <div class="container-result">
+                    <img src="img/social/localization-icon.png" alt="">
+                    <div class="container-input-adress">
+                        <input type="text" class="adress" disabled>
+                        <input type="text" class="district" disabled>
+                        <input type="text" class="city" disabled>
+                        <input type="text" class="state" disabled>
+                        <input type="text" class="cod" disabled>
+                    </div>
+                </div>
+                <div class="container-result-shipping" id="container-result-shipping">
+                    <div class="container-img">
+                        <img src="img/social/truck_icon.png" alt="">
+                        <input type="text" class="deadline" disabled>
+                    </div>
+                    <div class="container-result-price">
+                        <input type="text" class="price-shipping">
+                    </div>                    
+                </div>
             </div>
         </section>
         <section class="resume">
@@ -80,6 +102,7 @@
     </div>
 
     <script src="js/item-amount.js"></script>
+    <script src="js/apiCorreiosBrasil.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
