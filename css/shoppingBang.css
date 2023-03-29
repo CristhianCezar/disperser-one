@@ -154,7 +154,7 @@ section.shipping #result-cep .container-result-shipping .container-img img {
     height: 24px;
 }
 
-section.shipping #result-cep input {
+section.shipping #result-cep .container-result input {
     border: none;
     outline: none;
     padding-left: 10px;  
@@ -162,19 +162,37 @@ section.shipping #result-cep input {
     width: 100%;
 }
 
-section.shipping #result-cep .container-result-shipping .container-result-price .price-shipping {
-    text-align: center;
+section.shipping #result-cep .container-result-shipping .container-result-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
+    gap: 10px;
     margin-top: 8px;
+}
+
+section.shipping #result-cep .container-result-shipping .container-img input {
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 100%;
+    padding-left: 10px;
+}
+
+section.shipping #result-cep .container-result-shipping .container-result-price .price-shipping {
+    width: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: white;      
 }
 
 
 section.shipping #result-cep .container-result-shipping {
     display: flex;
     flex-direction: column;
-
-
 }
 
 section.resume {

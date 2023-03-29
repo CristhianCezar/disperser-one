@@ -7,8 +7,8 @@ const preencherDados = (endereco) => {
 
     let deadline = document.querySelector('.deadline');
     let priceShipping = document.querySelector('.price-shipping');
-    const shippingBelem = 9.89;
-    const shippingOthersCity = 59.99;
+    const shippingBelem = 10;
+    const shippingOthersCity = 60;
 
 
     adress.value = endereco.logradouro;
@@ -19,10 +19,10 @@ const preencherDados = (endereco) => {
 
     if(cod.value == "1501402") {
         deadline.value = "Entrega entre 1-2 dias úteis";
-        priceShipping.value = `R$ ${shippingBelem}`;
+        priceShipping.value = shippingBelem;
     } else {
         deadline.value = "Entrega entre 6-10 dias úteis";
-        priceShipping.value = `R$ ${shippingOthersCity}`;
+        priceShipping.value = shippingOthersCity;
     }
 }
 

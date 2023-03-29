@@ -64,7 +64,8 @@
                         <input type="text" class="deadline" disabled>
                     </div>
                     <div class="container-result-price">
-                        <input type="text" class="price-shipping">
+                        <label for="price-shipping">R$</label>
+                        <input type="text" class="price-shipping" id="price-shipping">
                     </div>                    
                 </div>
             </div>
@@ -76,12 +77,12 @@
             <div class="resume-details">
                 <div class="information-values">
                     <label for="resume-product"> Valor dos produtos</label>
-                    <input type="text" id="resume-product" disabled placeholder="30,00">
+                    <input type="text" id="resume-product" disabled placeholder="R$ 00,00">
                 </div>
 
                 <div class="information-values">
                     <label for="value-shipping">Valor de frete</label>
-                    <input type="text" id="value-shipping" placeholder="30,00" disabled>
+                    <input type="text" id="value-shipping" placeholder="R$ 00,00" disabled>
                 </div>
 
                 <div class="information-values">    
@@ -91,7 +92,7 @@
             </div>
             <div class="information-values">
                 <label for="total" class="total">Total</label>
-                <input type="text" id="total" placeholder="30,00" disabled>
+                <input type="text" id="total" placeholder="R$ 00,00" disabled>
             </div>
         </section>
         <section class="payment">
@@ -104,5 +105,6 @@
     <script src="js/item-amount.js"></script>
     <script src="js/apiCorreiosBrasil.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/resumePayment.js"></script>
 </body>
 </html>
