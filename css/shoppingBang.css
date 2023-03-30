@@ -84,9 +84,7 @@ section.amount .set-amount .btn-amount button:active {
 section.amount .set-amount .btn-amount #amount-show {
     width: 32px;
     height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 section.shipping .calculator {

@@ -62,7 +62,6 @@
             } else {
                 preencherDados(endereco);
                 document.getElementById('container-result-shipping').style.display = "block";
-                
             }
         } else {       
             document.querySelector('.adress').value = "CEP não encontrado";
@@ -127,7 +126,6 @@ function moreValueProduct() {
    let resutOperation = priceProduct + priceProduct * amountItemNumber++;
     valueProduct.value = resutOperation.toFixed(2).replace('.', ',');
 }
-
 
 function lessValueProduct() {
     let resutOperation = priceProduct * amountItemNumber-- -priceProduct;
