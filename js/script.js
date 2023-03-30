@@ -60,7 +60,7 @@
                 document.getElementById('container-result-shipping').style.display = "none";
                
             } else {
-                preencherDados(endereco);
+                return preencherDados(endereco),
                 document.getElementById('container-result-shipping').style.display = "block";
             }
         } else {       
@@ -108,76 +108,76 @@ less.addEventListener('click', oneLessItem);
     // ----------------javascript shoppingBag Resumo de pagamento -----------------------
 
 
-// let amountItem = document.getElementById('amount-show');
-// let valueProduct = document.getElementById('resume-product');
-// let btnMore = document.getElementById('more');
-// let btnLess = document.getElementById('less');
-// let total = document.getElementById('total');
+let amountItem = document.getElementById('amount-show');
+let valueProduct = document.getElementById('resume-product');
+let btnMore = document.getElementById('more');
+let btnLess = document.getElementById('less');
+let total = document.getElementById('total');
 
-// const btnCalculatorShipping = document.getElementById('btn-calculator-shipping'); 
+const btnCalculatorShipping = document.getElementById('btn-calculator-shipping'); 
 
-// let amountItemNumber = parseFloat(amountItem.value);
-// let priceProduct = 30.00;
-// valueProduct.value = priceProduct;
+let amountItemNumber = parseFloat(amountItem.value);
+let priceProduct = 30.00;
+valueProduct.value = priceProduct;
 
-// console.log(valueProduct.value)
+console.log(valueProduct.value)
 
-// function moreValueProduct() {
-//    let resutOperation = priceProduct + priceProduct * amountItemNumber++;
-//     valueProduct.value = resutOperation.toFixed(2).replace('.', ',');
-// }
+function moreValueProduct() {
+   let resutOperation = priceProduct + priceProduct * amountItemNumber++;
+    valueProduct.value = resutOperation.toFixed(2).replace('.', ',');
+}
 
-// function lessValueProduct() {
-//     let resutOperation = priceProduct * amountItemNumber-- -priceProduct;
-//     valueProduct.value = resutOperation.toFixed(2).replace('.' , ',');
-// }
+function lessValueProduct() {
+    let resutOperation = priceProduct * amountItemNumber-- -priceProduct;
+    valueProduct.value = resutOperation.toFixed(2).replace('.' , ',');
+}
 
-// async function setPriceShipping() {
-//     let valueShipping = document.getElementById('value-shipping');
-//     valueShipping.value = await resolveAfter3Seconds();   
-// }
+async function setPriceShipping() {
+    let valueShipping = document.getElementById('value-shipping');
+    valueShipping.value = await resolveAfter3Seconds();   
+}
 
-// function resolveAfter3Seconds() {
-//     return new Promise(resolve => {
-//         setTimeout(() => {
-//             resolve(
-//                 document.getElementById('price-shipping').value.replace('.', ',')
-//             );
-//         }, 3000);
-//     });
-// }
+function resolveAfter3Seconds() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(
+                document.getElementById('price-shipping').value.replace('.', ',')
+            );
+        }, 3000);
+    });
+}
 
-// async function setTotal() {
-//     let total = document.getElementById('total');
-//     let resumeProduct = document.getElementById('resume-product');
-//     let resultValueShipping = await resolveAfter5Seconds();
-//     let totalValue = parseInt(resultValueShipping) + parseInt(resumeProduct.value);
-//     total.value = `R$ ${totalValue.toFixed(2)}`;
+async function setTotal() {
+    let total = document.getElementById('total');
+    let resumeProduct = document.getElementById('resume-product');
+    let resultValueShipping = await resolveAfter5Seconds();
+    let totalValue = parseInt(resultValueShipping) + parseInt(resumeProduct.value);
+    total.value = `R$ ${totalValue.toFixed(2)}`;
 
-//     if(total.value === "R$ NaN") {
-//         total.value = "R$ 00,00";
-//     }
-// }
+    if(total.value === "R$ NaN") {
+        total.value = "R$ 00,00";
+    }
+}
 
-// function resolveAfter5Seconds() {
-//     return new Promise(resolve => {
-//         setTimeout(() => {
-//             resolve(
-//                 document.getElementById('value-shipping').value
-//                 );
-//             }, 3500);
-//         });
-//     }
+function resolveAfter5Seconds() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(
+                document.getElementById('value-shipping').value
+                );
+            }, 3500);
+        });
+    }
     
 
 
-//     btnMore.addEventListener('click', moreValueProduct);
-//     btnLess.addEventListener('click', lessValueProduct);
-//     btnCalculatorShipping.addEventListener('click', setPriceShipping);
+    btnMore.addEventListener('click', moreValueProduct);
+    btnLess.addEventListener('click', lessValueProduct);
+    btnCalculatorShipping.addEventListener('click', setPriceShipping);
 
-//     btnCalculatorShipping.addEventListener('click', setTotal);
-//     btnMore.addEventListener('click', setTotal);
-//     btnLess.addEventListener('click', setTotal);
+    btnCalculatorShipping.addEventListener('click', setTotal);
+    btnMore.addEventListener('click', setTotal);
+    btnLess.addEventListener('click', setTotal);
 
 // ------------------------------
 
