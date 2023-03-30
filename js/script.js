@@ -171,13 +171,13 @@ less.addEventListener('click', oneLessItem);
     
 
 
-    btnMore.addEventListener('click', moreValueProduct);
-    btnLess.addEventListener('click', lessValueProduct);
-    btnCalculatorShipping.addEventListener('click', setPriceShipping);
+//     btnMore.addEventListener('click', moreValueProduct);
+//     btnLess.addEventListener('click', lessValueProduct);
+//     btnCalculatorShipping.addEventListener('click', setPriceShipping);
 
-    btnCalculatorShipping.addEventListener('click', setTotal);
-    btnMore.addEventListener('click', setTotal);
-    btnLess.addEventListener('click', setTotal);
+//     btnCalculatorShipping.addEventListener('click', setTotal);
+//     btnMore.addEventListener('click', setTotal);
+//     btnLess.addEventListener('click', setTotal);
 
 // ------------------------------
 
