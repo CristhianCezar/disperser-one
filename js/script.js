@@ -44,7 +44,7 @@
     
     const cepCorreiosBrasil = async() => {
         const cep = document.getElementById('shipping-calculator').value;
-        const url = `http://viacep.com.br/ws/${cep}/json/`;
+        const url = `https://viacep.com.br/ws/${cep}/json/`;
     
         document.getElementById('result-cep').style.display = "flex";
     
