@@ -4,7 +4,7 @@
     
 
     const product = {
-        name: nameProduct.innerHTML = "Dispenser e porta escova",
+        name: nameProduct.innerHTML = "Dispenser Com Porta Escova",
         price: price.innerHTML = "R$ 30,00 À vista",
         priceCard: priceCard.innerHTML = "10x de R$ 3,00",
     }
