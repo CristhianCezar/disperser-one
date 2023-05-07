@@ -1,181 +1,163 @@
-#container {
-    opacity: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.s-hero .container-hero {
+    margin-top: 32px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-}
-
-.header .img-main {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
-.header .img-main img {
-    width: 100%;
-    height: 60vh;
-}
-
-
-
-/* ------ NAV BURGER ------ */
-#container-nav {
-    display: none;
-    margin-top: 16px;
-    height: 100vh;
-    background-color: var(--green-secund);
-    opacity: 0.8;
-    transition: 1s;
-}
-
-#container-nav ul {
-    height: 100%;
-    z-index: 1;
-}
-
-#container-nav ul li {
-    border-bottom: 1px solid black;
-    font-size: 24px;
-    color: white;
-    font-weight: bold;
-    padding: 32px 0 32px 16px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-
-#container-nav ul li:hover {
-    background-color: rgba(255, 255, 255, 0.564);
-}
-
-#container-nav ul li:active {
-    transform: scale(0.9);
-}
-
-
-
-/* ----- MAIN ------  */
-.main {
-    margin-top: calc(54vh);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main .container-main {
-    width: 90%;
-
-}
-
-.main .container-main .title {
-    text-align: center;
-}
-
-.main .container-main .title h1 {
-    font-size: 18px;
-}
-
-.main .container-main .title h2 {
-    font-weight: 100;
-    font-size: 16px;
-}
-
-
-
-/* ------ PRODUCT ------ */
-.main .product {
-    width: 70%;
-    margin: auto;
-    margin-top: 16px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: white;
-    -webkit-box-shadow: 8px 23px 33px -9px rgba(0,0,0,0.5);
-    -moz-box-shadow: 8px 23px 33px -9px rgba(0,0,0,0.5);
-    box-shadow: 8px 23px 33px -9px rgba(0,0,0,0.5);
-    transition: 0.1s;
-    margin-bottom: 32px;
-}
-
-.main .product:hover {
-    transform: scale(1.03);
-}
-
-.main .product:active {
-    transform: scale(0.9);
-}
-
-.main .product a {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.main .product .img {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
-.main .product .img img {
-    width: 80%;
+.s-hero .container-hero .title {
+    text-align: center;
+    padding: 8px 0;
+    background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.038));
 }
 
-.main .description {
+.s-hero .container-hero .img-hero img{
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+section.s-about {
+    margin-top: 78vh;
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 90%;
-    margin: auto;
-    padding-bottom: 10px;
+    justify-content: center;
 }
 
-.title-dispenser {
-    font-size: 18px;
-    color: black;
+section.s-about .container-about {
+    margin-top: 32px;
+    width: 95%;
 }
 
-.main .product .value {
+section.s-about .container-about .title {
     text-align: center;
 }
 
-#value-product {
-    font-size: 20px;
-    color: black;
-    font-weight: 100;   
-    padding-left: 3px;
-}
-
-/* ---- Media Social ----  */
-.footer {
+section.s-about .container-about .container-solutions {
     width: 100%;
-    background-color: var(--gray-primary);
-    padding: 16px 0;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
-.footer .container {
+section.s-about .container-about .solution .sub-title{
+    margin-top: 16px;
+}
+
+section.s-about .container-about .solution .informations {
+    margin-top: 16px;
+    text-align: center;
+}
+
+section.s-about .container-about .solution .img-produt {
+    width: 100%;
+    margin-top: 24px;
+}
+
+section.s-about .container-about .solution .img-produt img {
+    width: 100%;
+}
+
+section.s-about .container-about .solution:nth-child(1) img {
+    box-shadow: #00c6c6a8 0px 10px 20px -10px;
+}
+
+section.s-about .container-about .solution:nth-child(2) img {
+    box-shadow: #00c6c6a8 0px 10px 20px -10px;
+}
+
+section.s-about .container-about .solution:nth-child(4) img {
+    box-shadow: #00c6c6a8 0px 10px 20px -10px;
+}
+
+section.s-about .container-about .solution .purchase {
+    margin: 72px 0;
+    display: flex;
+    justify-content: center;
+}
+
+section.s-about .container-about .solution .purchase a {
+    padding: 12px 24px;
+    border-radius: 16px;
+    background-color: rgb(4, 255, 4);
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.s-video {
+    background-image: linear-gradient(to top, rgb(91, 90, 90), 70%, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 32px;
+}
+
+.s-video .title {
+    margin-top: 72px;
+}
+
+.s-video .container-video {
+    margin-top: 16px;
+}
+
+.s-video .container-video iframe {
+    border-radius: 16px;
+    width: 250px;
+    height: 180px;
+    margin: auto;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container-price {
+    margin-top: 56px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer .container a:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
+footer .container-price .price {
+    text-align: center;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #00C6C6;
+    color: black;
+    border-radius: 16px;
 }
 
-.footer .container a:active {
-    transform: scale(0.9);
-    transition: 0.05s;
+footer .container-price .purchase{
+    margin: 32px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.footer .container img {
-    width: 50px;
-}
-
-.footer .container a:nth-child(2) img {
-    width: 54px;
+footer .container-price .purchase a {
+    padding: 12px 24px;
+    border-radius: 16px;
+    background-color: rgb(4, 255, 4);
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
 }
