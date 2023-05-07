@@ -1,98 +1,27 @@
-@media (max-width: 350px) {
-    #container-nav ul li {
-    padding: 24px 0 24px 16px;
+@media  (min-width: 320px), (max-width: 375px){
+    .s-hero .container-hero {
+        margin-top: 72px;
     }
 }
 
-@media (max-height: 450px) {
-    
-    .header .img-main img {
-        height: 100vh;
-    }
-    
-    .main {
-        margin-top: calc(90vh);
+@media  (min-width: 376px), (max-width: 450px) {
+    .s-hero .container-hero {
+        margin-top: 80px;
     }
 
-}
-
-@media (min-width: 500px) {    
-    .main .product .img img {
-        width: 80%;
-        height: 350px;
+    .s-video .container-video iframe {
+        width: 300px;
+        height: 200px;
     }
 }
 
-@media (min-width: 800px) {
-    .main {
-        margin-top: calc(60vh);
-    }
-}
-
-@media (min-width: 1000px) {
-    .header .img-main img {
-        height: 100vh;
+@media  (min-width: 451px), (max-width: 500px) {
+    .s-hero .container-hero {
+        margin-top: 120px;
     }
 
-    .main {
-        margin-top: calc(90vh);
-    }
-
-    .header .menu-hamburguer {
-        display: none;
-    }
-
-    #container-nav {
-        display: flex;
-        height: fit-content;
-        background-color: rgba(255, 255, 255, 0.040);
-    }
-
-    #container-nav ul {
-        display: flex;
-        gap: 56px;
-        padding-left: 56px;
-    }
-    
-    #container-nav ul li {
-        border-bottom: none;
-        padding: 24px 0 24px 0;
-
-    }
-
-    .main .product {
-        width: 40%;
-    }
-
-    .title-dispenser {
-        font-size: 24px;
-        color: black;
-    }
-    
-    #value-product {
-        font-size: 24px;
-        color: black;
-        font-weight: 100;   
-        padding-left: 3px;
-       }
-
-    .value {
-        text-align: center;
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 1350px) {
-    .main {
-        margin-top: calc(100vh);
-    }
-
-    .main .container-main .title h1 {
-        font-size: 24px;
-    }
-    
-    .main .container-main .title h2 {
-        font-weight: 100;
-        font-size: 20px;
+    .s-video .container-video iframe {
+        width: 400px;
+        height: 300px;
     }
 }
